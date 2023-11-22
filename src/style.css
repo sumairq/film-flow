@@ -26,7 +26,7 @@ a {
 }
 
 button {
-  border-radius: 5px;
+  border-radius: 50px;
   border: 2px solid black;
   background-color: aliceblue;
   height: 3rem;
@@ -149,33 +149,53 @@ footer {
 
 .card {
   display: flex;
+  width: 350px;
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
-  border: 5px solid #111;
   border-radius: 12px;
   padding: 1.5rem;
   background-color: aliceblue;
 }
 
+
+.card__title-rating{
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1.3rem;
+}
+
 .img-card {
   display: block;
-  max-width: 30rem;
-  border-radius: 7px;
+  width:auto;
+  border-radius: 11px;
   cursor: pointer;
   transition: 0.4s;
 }
+
+/* .card__image-container{
+  border
+} */
 
 .img-card:hover {
   transform: scale(1.1);
 }
 
+.card-title {
+  display: flex;
+  justify-content: space-between;
+}
+
 .card__title,
 .movie-title {
   color: black;
+  
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
   font-size: 2.5rem;
   font-weight: 700;
-  text-align: center;
   padding: 1rem;
   margin-bottom: 1rem;
   margin-top: 1rem;
