@@ -21,4 +21,24 @@ const countMovies = (movies) => {
   displayCount(num);
 };
 
-export { counter, displayCount, countMovies };
+const truncateTitle = (title) => {
+   // Use a regular expression to match all spaces
+   const spaceRegex = /\s/g;
+
+   // Use split to get an array of all matches
+   const spacesArray = title.split(spaceRegex);
+ console.log(title, title.length)
+   // Use filter to remove any empty strings (resulting from consecutive spaces)
+   const nonEmptySpacesArray = spacesArray.filter(space => space !== '');
+ console.log(title, nonEmptySpacesArray.length)
+   // Return the count of non-empty spaces
+   if(nonEmptySpacesArray.length > 3){
+     return title.slice(0,15).concat('...')
+   }else if(title.length > 16){
+    return title.slice(0,15).concat('...')
+   }else{
+    return title
+   }
+}
+
+export { counter, displayCount, countMovies, truncateTitle };

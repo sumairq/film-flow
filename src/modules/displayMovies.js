@@ -1,5 +1,5 @@
 import { updateLikes, addLike } from './likes.js';
-import { countMovies } from './counter.js';
+import { countMovies, truncateTitle } from './counter.js';
 
 const displayMovies = (data) => {
   const moviesSection = document.querySelector('.cards');
@@ -13,9 +13,12 @@ const displayMovies = (data) => {
              alt="ant-man">
          </div>
          <div class="card__content">
-           <p class="card__title text--medium">
-            ${item.name}
-           </p>
+         <div class="card-title">
+         <p class="card__title text--medium">
+         ${truncateTitle(item.name)}
+         </p>
+         <p class="card__title-rating"><i class="fa fa-star" aria-hidden="true"></i>${' '}${item.rating.average}</p>
+         </div>  
            <div class="card__info">
            <button class="btn card__comments">Comments</button>
            <button class="btn card__reservations">Reservations</button>
