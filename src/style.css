@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,300;0,400;0,500;1,400&display=swap');
 
+@font-face {
+  font-family: 'CustomSans' ;
+  src: url(./modules//logo//Fira\ Sans\ Extra\ Condensed\ Bold.txt);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scrollbar-width: thin;
 }
 
 html {
@@ -13,8 +17,8 @@ html {
 }
 
 body {
-  background-color: #222;
-  margin: 2.5rem auto;
+ background-color: #8BC6EC;
+ background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);margin: 2.5rem auto;
 }
 
 ul {
@@ -48,8 +52,10 @@ button:hover {
 header,
 footer {
   background-repeat: no-repeat;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   width: 90vw;
-  height: 10vh;
+  height: 12vh;
+  border-radius: 100px;
 
   /* border: 3px solid #111; */
 
@@ -66,10 +72,15 @@ footer {
 }
 
 .nav-list {
+  margin-right: 10px;
   display: flex;
   list-style: none;
   gap: 4rem;
   cursor: pointer;
+}
+
+.nav-item {
+  font-family: 'CustomSans',sans-serif
 }
 
 .nav-item:not(:last-child) {
@@ -81,15 +92,15 @@ footer {
   text-shadow: 0.5rem 1rem 2rem aliceblue;
 }
 
-.logo {
+/* .logo {
   display: block;
   width: 22rem;
   cursor: pointer;
-}
+} */
 
 .logo-img {
-  margin-left: -35vw;
-  height: 50px;
+  margin-right: auto;
+  left: 10px;
   width: 30rem;
 }
 
@@ -106,11 +117,11 @@ footer {
     font-size: 2rem;
   }
 
-  .logo-img {
+  /* .logo-img {
     margin-left: -16vw;
     height: 7vh;
     width: 35vw;
-  }
+  } */
 
   .logo {
     width: 5vw;
@@ -129,9 +140,9 @@ footer {
 
 @media screen and (min-width: 1000px) {
   .logo-img {
-    margin-left: -55vw;
-    height: 65px;
-    width: 40rem;
+    margin-right: auto;
+    left: 10px;
+    width: 30rem;
   }
 }
 
@@ -140,11 +151,14 @@ footer {
 /* Main section */
 
 .cards {
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(max-content, 1fr));
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 5rem;
+  margin-left: 6rem;
+  margin-top: 6rem;
 }
 
 .card {
@@ -154,7 +168,9 @@ footer {
   align-items: center;
   gap: 1.5rem;
   border-radius: 12px;
-  padding: 1.5rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  padding: 1rem;
+  padding-top: 3rem;
   background-color: aliceblue;
 }
 
