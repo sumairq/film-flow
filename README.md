@@ -1,11 +1,11 @@
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Hollyflix
-> Only on Hollyflix
-Hollyflix is the home of amazing original programming that you can’t find anywhere else. Movies, TV shows, specials and more, all tailored specifically to you.
+# Film Flow
+Film Flow is the home of amazing original programming that you can’t find anywhere else. Movies, TV shows, specials and more, all tailored specifically to you.
 
-![2022-02-19_22-41-37](https://user-images.githubusercontent.com/63915024/154812532-d52535fd-1acd-4aec-aaa3-759892492ad5.png)
+![Screenshot from 2023-11-22 20-10-13](https://github.com/sumairq/film-flow/assets/60618877/57af8dab-0e01-457b-9473-d7aa156d006f)
+
 
 
 ## Built With
